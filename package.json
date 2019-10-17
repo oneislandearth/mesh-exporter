@@ -2,15 +2,18 @@
   "name": "@oneisland/mesh-exporter",
   "private": false,
   "version": "0.0.1",
-  "description": "A simple tool for exporting meshes to zip archives",
+  "description": "A simple tool for exporting meshes to ZIP archives",
   "keywords": [
-    "obj exporter",
+    "mesh exporter",
+    "obj",
+    "stl",
     "cad",
     "oneisland"
   ],
   "main": "lib/exporter.js",
   "scripts": {
     "build": "oneisland-babler lib",
+    "test": "npm run build && ava",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
@@ -20,6 +23,8 @@
   "devDependencies": {
     "@oneisland/babler": "^0.0.7",
     "@oneisland/linter": "^0.0.11",
+    "@oneisland/mesh": "^0.0.1",
+    "ava": "^2.4.0",
     "source-map-support": "^0.5.13"
   },
   "homepage": "https://github.com/oneislandearth/model-exporter#readme",
