@@ -92,24 +92,32 @@ export class MeshExporter {
     // Generate a new promise and return it
     return new Promise(resolve => {
 
-      // Attempt to save the file using nodejs
-      try {
+      // Check for the process.env flag (node environments)
+      if (process.env) {
 
-        // Import the node fs and path modules
-        const fs = require('fs');
-        const path = require('path');
+        // Attempt to save the file using nodejs
+        try {
 
-        // / Create a buffer with the zip conentent
-        const buffer = this.zip.generateNodeStream({ type: 'nodebuffer', streamFiles: true });
+          // Import the node fs and path modules
+          const fs = require('fs');
+          const path = require('path');
 
-        // Pipe the files to a file using fs
-        const pipe = buffer.pipe(fs.createWriteStream(path.resolve(process.cwd(), this.filepath)));
+          // / Create a buffer with the zip conentent
+          const buffer = this.zip.generateNodeStream({ type: 'nodebuffer', streamFiles: true });
 
-        // Resolve the promise
-        pipe.on('finish', () => resolve());
+          // Pipe the files to a file using fs
+          const pipe = buffer.pipe(fs.createWriteStream(path.resolve(process.cwd(), this.filepath)));
+
+          // Resolve the promise
+          pipe.on('finish', () => resolve());
+
+        } catch (e) {
+
+          // Do nothing with the error
+        }
 
       // Running from the browser  
-      } catch (e) {
+      } else {
 
         // Generate the zip archive as a blob
         this.zip.generateAsync({ type: 'blob' }).then((content) => {

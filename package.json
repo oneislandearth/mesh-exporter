@@ -1,7 +1,7 @@
 {
   "name": "@oneisland/mesh-exporter",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple tool for exporting meshes to ZIP archives",
   "keywords": [
     "mesh exporter",
@@ -17,7 +17,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@oneisland/validator": "^0.0.2",
+    "@oneisland/validator": "^0.0.3",
     "jszip": "^3.2.2"
   },
   "devDependencies": {
@@ -27,13 +27,13 @@
     "ava": "^2.4.0",
     "source-map-support": "^0.5.13"
   },
-  "homepage": "https://github.com/oneislandearth/model-exporter#readme",
+  "homepage": "https://github.com/oneislandearth/mesh-exporter#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oneislandearth/model-exporter.git"
+    "url": "git+https://github.com/oneislandearth/mesh-exporter.git"
   },
   "bugs": {
-    "url": "https://github.com/oneislandearth/model-exporter/issues"
+    "url": "https://github.com/oneislandearth/mesh-exporter/issues"
   },
   "contributors": [
     "Daniel Larkin <daniel@oneisland.io>"
