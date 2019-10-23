@@ -17,7 +17,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
-    "@oneisland/validator": "^0.0.2",
+    "@oneisland/validator": "^0.0.3",
     "jszip": "^3.2.2"
   },
   "devDependencies": {
