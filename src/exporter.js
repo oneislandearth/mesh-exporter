@@ -92,8 +92,8 @@ export class MeshExporter {
     // Generate a new promise and return it
     return new Promise(resolve => {
 
-      // Check for the process.env flag (node environments)
-      if (process.env) {
+      // Check for the node environment
+      if (typeof window === 'undefined') {
 
         // Attempt to save the file using nodejs
         try {
