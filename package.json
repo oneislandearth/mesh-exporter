@@ -23,7 +23,7 @@
   "devDependencies": {
     "@oneisland/babler": "^0.0.7",
     "@oneisland/linter": "^0.0.11",
-    "@oneisland/mesh": "^0.0.1",
+    "@oneisland/mesh": "^0.0.3",
     "ava": "^2.4.0",
     "source-map-support": "^0.5.13"
   },
