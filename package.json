@@ -21,7 +21,7 @@
     "jszip": "^3.2.2"
   },
   "devDependencies": {
-    "@oneisland/babler": "^0.0.7",
+    "@oneisland/babler": "^0.0.8",
     "@oneisland/linter": "^0.0.11",
     "@oneisland/mesh": "^0.0.1",
     "ava": "^2.4.0",
