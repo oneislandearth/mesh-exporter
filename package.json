@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@oneisland/validator": "^0.0.3",
-    "jszip": "^3.2.2"
+    "jszip": "^3.3.0"
   },
   "devDependencies": {
     "@oneisland/babler": "^0.0.7",
