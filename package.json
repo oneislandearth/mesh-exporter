@@ -25,7 +25,7 @@
     "@oneisland/linter": "^0.0.11",
     "@oneisland/mesh": "^0.0.1",
     "ava": "^2.4.0",
-    "source-map-support": "^0.5.13"
+    "source-map-support": "^0.5.18"
   },
   "homepage": "https://github.com/oneislandearth/mesh-exporter#readme",
   "repository": {
